@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://biblioverse.github.io',
-	base: 'biblioteca-doc',
+	base: import.meta.env.PROD?'biblioteca-doc':'',
 	integrations: [
 		starlight({
 			title: 'Biblioteca',
