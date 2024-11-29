@@ -3,23 +3,30 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://biblioverse.github.io',
+	base: 'biblioteca-doc',
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Biblioteca',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/biblioverse/biblioteca',
 			},
+			lastUpdated: true,
+
 			sidebar: [
+				{ label: 'Home', link: '/' },
+				{ label: 'Important concepts', link: '/concepts' },
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: 'Installation',
+					autogenerate: { directory: 'installing' },
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'User accounts',
+					autogenerate: { directory: 'account' },
+				},
+				{
+					label: 'Managing your books',
+					autogenerate: { directory: 'managing_books' },
 				},
 			],
 		}),
