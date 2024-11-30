@@ -1,3 +1,3 @@
 ---
-title: Updating your preferences
+title: Updating your settings
 ---

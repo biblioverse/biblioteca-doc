@@ -8,7 +8,7 @@ By default all the template in the `templates` directory are used.
 
 If you create a new theme, 
 
-1. Add your theme in the user form:
+1. Add your theme in the user form in `src/Form/ProfileType.php`:
    ```php
             ->add('theme', ChoiceType::class, [
                 'label' => 'Theme',
@@ -25,4 +25,5 @@ If you create a new theme,
 
     Every time a template is called, it will first check if the template exists in the theme's folder or fall back to the original one
 
-3. Update the CSS asset as necessary. 
+3. Update the CSS asset as necessary.
+4. Don't forget to change your theme in the user settings to test it

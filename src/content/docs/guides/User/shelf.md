@@ -1,5 +1,5 @@
 ---
-title: Simple shelves
+title: Shelves
 ---
 
 Shelves are groups of books, they can be static or dynamic.
