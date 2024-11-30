@@ -1,3 +1,0 @@
----
-title: From a folder
----

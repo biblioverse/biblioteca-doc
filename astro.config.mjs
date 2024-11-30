@@ -7,26 +7,24 @@ export default defineConfig({
 	base: import.meta.env.PROD?'biblioteca-doc':'',
 	integrations: [
 		starlight({
-			title: 'Biblioteca',
+			title: 'Biblioteca Docs',
 			social: {
 				github: 'https://github.com/biblioverse/biblioteca',
 			},
 			lastUpdated: true,
-
+			customCss: [
+				// Relative path to your custom CSS file
+				'./src/custom.css',
+			],
 			sidebar: [
 				{ label: 'Home', link: '/' },
-				{ label: 'Important concepts', link: '/concepts' },
 				{
 					label: 'Installation',
 					autogenerate: { directory: 'installing' },
 				},
 				{
-					label: 'User accounts',
-					autogenerate: { directory: 'account' },
-				},
-				{
-					label: 'Managing your books',
-					autogenerate: { directory: 'managing_books' },
+					label: 'User Guides',
+					autogenerate: { directory: 'guides' },
 				},
 			],
 		}),

@@ -18,3 +18,16 @@ KOBO_PROXY_USE_DEV=0
 KOBO_PROXY_USE_EVERYWHERE=0
 KOBO_PROXY_ENABLED=1
 ```
+
+- `APP_ENV`: The environment the application is running in. This can be `dev` or `prod`. You should always use `prod` unless you need to debug the application.
+- `APP_SECRET`: A secret key used to secure the application. Make it unique!
+- `DATABASE_URL`: The URL to the database. You should not need to change this unless you are using a different database.
+- `MESSENGER_TRANSPORT_DSN`: Do not change it.
+- `MAILER_DSN`: Currently not used.
+- `TYPESENSE_URL`: The URL to the typesense server. You should not need to change this unless you are using a different server.
+- `TYPESENSE_KEY`: The key to access the typesense server. Needs to correspond to the one you set in your docker-compose file.
+- `BOOK_FOLDER_NAMING_FORMAT`: The format to use to name the folders where the books are stored. You can use the following placeholders: `{authorFirst}`, `{author}`, `{title}`, `{serie}`.
+- `BOOK_FILE_NAMING_FORMAT`: The format to use to name the files where the books are stored. You can use the following placeholders: `{serie}`, `{serieIndex}`, `{title}`.
+- `KOBO_PROXY_USE_DEV`: If set to `1`, the kobo proxy will be used in development.
+- `KOBO_PROXY_USE_EVERYWHERE`: If set to `1`, the kobo proxy will be used everywhere and all request will be forwarded to the original store.
+- `KOBO_PROXY_ENABLED`: If set to `0`, the kobo proxy will be disabled.
