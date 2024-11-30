@@ -5,6 +5,9 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	site: 'https://biblioverse.github.io',
 	base: import.meta.env.PROD?'biblioteca-doc':'',
+	editLink: {
+		baseUrl: 'https://github.com/biblioverse/biblioteca-doc/edit/main/docs/',
+	},
 	integrations: [
 		starlight({
 			title: 'Biblioteca Docs',
@@ -25,6 +28,10 @@ export default defineConfig({
 				{
 					label: 'User Guides',
 					autogenerate: { directory: 'guides' },
+				},
+				{
+					label: 'Troubleshooting',
+					autogenerate: { directory: 'Troubleshooting' },
 				},
 			],
 		}),
