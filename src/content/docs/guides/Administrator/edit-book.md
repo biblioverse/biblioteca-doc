@@ -1,3 +1,3 @@
 ---
-title: Edit one book
+title: Edit book metadata
 ---
