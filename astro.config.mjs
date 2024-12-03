@@ -22,6 +22,7 @@ export default defineConfig({
 			],
 			sidebar: [
 				{ label: 'Home', link: '/' },
+				{ label: 'Demo', link: '/demo' },
 				{
 					label: 'Installation',
 					autogenerate: { directory: 'installing' },
