@@ -18,21 +18,15 @@ import { Steps } from '@astrojs/starlight/components';
     ```bash
     docker compose exec biblioteca bin/console doctrine:migration:migrate --no-interaction
     ```
-3. Run the following command to rebuild the frontend assets:
 
-    ```bash
-    docker compose exec biblioteca npm i
-    docker compose exec biblioteca npm run build
-    ```
-
-4. If needed, update the typesense schema:
+3. If needed, update the typesense schema:
 
     ```bash
     docker-compose exec biblioteca bin/console typesense:create
     docker-compose exec biblioteca bin/console typesense:import
     ```
 
-5. Clear the cache:
+4. Clear the cache:
 
     ```bash
     docker-compose exec biblioteca bin/console cache:clear
