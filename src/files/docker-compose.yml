@@ -21,10 +21,10 @@ services:
       - MYSQL_USER=db
       - MYSQL_PASSWORD=db
     volumes:
-      - mariadb2:/var/lib/mysql
+      - mariadb:/var/lib/mysql
 
   typesense:
-    image: typesense/typesense:0.26.0.rc46
+    image: typesense/typesense:27.1
     restart: on-failure
     ports:
       - 8983
