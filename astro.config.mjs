@@ -9,6 +9,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Biblioteca Docs',
+			description: 'Documentation for Biblioteca, a modern, open-source, and privacy-focused eBook reader.',
 			social: {
 				github: 'https://github.com/biblioverse/biblioteca',
 			},
