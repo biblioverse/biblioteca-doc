@@ -8,13 +8,13 @@ export default defineConfig({
 
 	integrations: [
 		starlight({
-			title: 'Biblioteca Docs',
+			title: 'Deprecated Biblioteca Docs',
 			description: 'Documentation for Biblioteca, a modern, open-source, and privacy-focused eBook reader.',
 			social: {
 				github: 'https://github.com/biblioverse/biblioteca',
 			},
 			editLink: {
-				baseUrl: 'https://github.com/biblioverse/biblioteca-doc/edit/main/',
+				baseUrl: 'https://github.com/biblioverse/biblioteca/edit/main/',
 			},
 			lastUpdated: true,
 			customCss: [
@@ -23,19 +23,6 @@ export default defineConfig({
 			],
 			sidebar: [
 				{ label: 'Home', link: '/' },
-				{ label: 'Demo', link: '/demo' },
-				{
-					label: 'Installation',
-					autogenerate: { directory: 'installing' },
-				},
-				{
-					label: 'User Guides',
-					autogenerate: { directory: 'guides' },
-				},
-				{
-					label: 'Troubleshooting',
-					autogenerate: { directory: 'Troubleshooting' },
-				},
 			],
 		}),
 	],
